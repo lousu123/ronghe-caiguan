@@ -3,47 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-<title>融合菜·川菜馆 全渠道运营方案（小程序+点评+小红书+抖音+公众号+视频号）</title>
+<title>融合菜·川菜馆 全渠道运营方案</title>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;background:#8c1f16;padding:0 0 48px;color:#3a2b1a}
-.top-bar{background:linear-gradient(135deg,#8c1f16,#b3361f);padding:22px 20px 18px;text-align:center}
-.top-bar .mini{font-size:11px;color:#ffd9a0;letter-spacing:1px;margin-bottom:5px}
-.top-bar h1{font-size:21px;font-weight:800;color:#fff;letter-spacing:.5px;line-height:1.4}
-.top-bar .sub-line{font-size:13px;color:#ffd9a0;margin-top:6px}
-.container{max-width:420px;margin:0 auto;background:#fffdf8;border-radius:20px 20px 0 0;padding:22px 16px 28px}
-.card{background:#faf6ef;border-radius:14px;padding:16px;margin-bottom:12px;border:1px solid #eadbc6}
-.card .chapter{display:flex;align-items:center;gap:8px;margin-bottom:10px}
-.card .chapter .no{display:inline-flex;align-items:center;justify-content:center;background:#c62828;color:#fff;min-width:26px;height:26px;border-radius:50%;font-size:13px;font-weight:700;flex-shrink:0}
-.card .chapter .t{font-size:15px;font-weight:700;color:#7a1a12;line-height:1.4}
-.card p{font-size:14px;line-height:1.8;color:#4a3520;margin-bottom:6px}
-.card ul{padding-left:18px;line-height:1.9;font-size:14px;color:#4a3520}
-.card ul li{margin-bottom:4px}
-.card b,.card strong{color:#c62828}
-.info-box{background:linear-gradient(135deg,#8c1f16,#b3361f);border-radius:14px;padding:16px;margin-bottom:12px;color:#fff}
-.info-box p{font-size:13.5px;line-height:1.75;color:#fdf3e6;margin-bottom:4px}
-.info-box b{color:#ffd9a0}
-.channel-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
-.channel-head .ico{width:34px;height:34px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
-.channel-head .name{font-size:15px;font-weight:800;color:#7a1a12}
-.channel-head .role{font-size:11.5px;color:#b08a7e;margin-top:2px}
-.hl{background:#fdf6e3;border-left:3px solid #e0a030;padding:8px 12px;border-radius:0 8px 8px 0;margin:8px 0;font-size:13.5px;line-height:1.8;color:#5a4632}
-.hl b{color:#c62828}
+body{font-family:'Noto Sans SC',-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;background:linear-gradient(180deg,#FFF3E8 0%,#FFF8F2 100%);color:#3E2723;min-height:100vh;padding:0 0 60px}
+.top-bar{background:linear-gradient(135deg,#FF5A36,#FF8A3D);padding:28px 20px 24px;text-align:center;position:relative;overflow:hidden}
+.top-bar::before{content:'';position:absolute;top:-60%;left:-30%;width:160%;height:160%;background:radial-gradient(circle,rgba(255,255,255,.12) 0%,transparent 60%);pointer-events:none}
+.top-bar .mini{font-size:12px;color:#FFF3E0;letter-spacing:2px;margin-bottom:8px;position:relative}
+.top-bar h1{font-family:'Noto Serif SC',serif;font-size:24px;font-weight:900;color:#fff;letter-spacing:1px;line-height:1.4;position:relative;text-shadow:0 2px 8px rgba(200,60,0,.25)}
+.top-bar .sub-line{font-size:13px;color:#FFE8D6;margin-top:8px;letter-spacing:.5px;position:relative}
+.container{max-width:440px;margin:0 auto;padding:24px 16px 0}
+.badge{display:inline-block;background:#FFE3D5;color:#E64A19;font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px;letter-spacing:1px;margin-bottom:14px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:14px;border:1px solid #FBE0CF;box-shadow:0 4px 16px rgba(230,90,30,.06)}
+.card .chapter{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.card .chapter .no{display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#FF5A36,#FF8A3D);color:#fff;min-width:28px;height:28px;border-radius:50%;font-size:14px;font-weight:700;flex-shrink:0;box-shadow:0 2px 6px rgba(255,90,54,.3)}
+.card .chapter .t{font-size:16px;font-weight:700;color:#D84315;line-height:1.4}
+.card p{font-size:14px;line-height:1.85;color:#4E342E;margin-bottom:6px}
+.card ul{padding-left:18px;line-height:1.9;font-size:14px;color:#4E342E}
+.card ul li{margin-bottom:5px}
+.card b,.card strong{color:#E64A19}
+.channel-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.channel-head .ico{width:38px;height:38px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.channel-head .name{font-size:16px;font-weight:800;color:#D84315}
+.channel-head .role{font-size:12px;color:#A1887F;margin-top:2px}
+.hl{background:linear-gradient(135deg,#FFF3E0,#FFE3D5);border-left:4px solid #FF8A3D;padding:10px 14px;border-radius:0 10px 10px 0;margin:10px 0;font-size:14px;line-height:1.8;color:#5D4037}
+.hl b{color:#E64A19}
+.info-box{background:linear-gradient(135deg,#FFF3E8,#FFE3D5);border:1px solid #FBE0CF;border-radius:16px;padding:18px;margin-bottom:14px}
+.info-box p{font-size:13.5px;line-height:1.8;color:#5D4037;margin-bottom:5px}
+.info-box b{color:#E64A19}
 .price-grid{display:grid;gap:8px;margin:8px 0}
-.price-row{display:flex;justify-content:space-between;align-items:center;background:#fbe9e7;border-radius:10px;padding:10px 14px;font-size:13.5px}
-.price-row .name{font-weight:600;color:#7a1a12}
-.price-row .price{font-weight:800;color:#c62828}
-.price-row .tag{font-size:11px;color:#b08a7e;font-weight:400}
-.timeline{border-left:2px solid #e8c9a8;padding-left:14px;margin:8px 0}
-.timeline .tl-item{position:relative;margin-bottom:10px}
-.timeline .tl-item .dot{position:absolute;left:-19px;top:6px;width:8px;height:8px;border-radius:50%;background:#e0a030}
-.timeline .tl-item .time{font-size:13px;font-weight:700;color:#c62828}
-.timeline .tl-item .desc{font-size:13.5px;line-height:1.75;color:#4a3520}
-.final-card{background:linear-gradient(135deg,#8c1f16,#b3361f);border-radius:16px;padding:18px;text-align:center;margin-top:14px}
-.final-card p{color:#fff;font-size:15px;font-weight:700;line-height:1.7;letter-spacing:.3px}
-.final-card .sub{color:#ffd9a0;font-size:12.5px;margin-top:6px}
-.sign{font-size:11px;color:#c0a49a;text-align:center;margin-top:16px;line-height:1.7}
-.note{background:#fdf6e3;border:1px solid #e8d5a0;border-radius:12px;padding:12px 14px;margin-top:12px;font-size:13px;line-height:1.75;color:#6b4a00}
+.price-row{display:flex;justify-content:space-between;align-items:center;background:#FFF8F2;border:1px solid #FBE0CF;border-radius:12px;padding:11px 14px;font-size:13.5px}
+.price-row .name{font-weight:600;color:#D84315}
+.price-row .price{font-weight:800;color:#E64A19}
+.price-row .tag{font-size:11px;color:#A1887F;font-weight:400}
+.timeline{border-left:3px solid #FFB74D;padding-left:16px;margin:8px 0}
+.timeline .tl-item{position:relative;margin-bottom:12px}
+.timeline .tl-item .dot{position:absolute;left:-21px;top:7px;width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,#FF5A36,#FF8A3D);border:2px solid #fff;box-shadow:0 0 0 2px #FFB74D}
+.timeline .tl-item .time{font-size:13.5px;font-weight:700;color:#E64A19}
+.timeline .tl-item .desc{font-size:13.5px;line-height:1.75;color:#4E342E}
+.final-card{background:linear-gradient(135deg,#FF5A36,#FF8A3D);border-radius:18px;padding:22px;text-align:center;margin-top:16px;box-shadow:0 8px 24px rgba(255,90,54,.25)}
+.final-card p{color:#fff;font-size:16px;font-weight:700;line-height:1.8;letter-spacing:.5px;font-family:'Noto Serif SC',serif}
+.final-card .sub{color:#FFF3E0;font-size:13px;margin-top:8px}
+.sign{font-size:11.5px;color:#BCAAA4;text-align:center;margin-top:18px;line-height:1.8}
+.note{background:#FFF8F2;border:1px solid #FBE0CF;border-radius:14px;padding:14px;margin-top:14px;font-size:13px;line-height:1.8;color:#6D4C41}
 </style>
 </head>
 <body>
@@ -56,18 +59,20 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue"
 
 <div class="container">
 
+<span class="badge">🌶 全渠道运营 · 年轻客群</span>
+
 <!-- 门店画像 -->
 <div class="info-box">
-<p><b>门店画像：</b>一楼二楼共80㎡，做融合菜+川菜，人均20-60多元，周边学生、年轻人密集。</p>
+<p><b>门店画像：</b>一楼二楼共80㎡，融合菜+川菜，人均20-60多元，周边学生、年轻人密集。</p>
 <p><b>老板重点：</b>小程序装修 + 私域运营。</p>
-<p><b>渠道逻辑：</b><b>小程序是地基</b>（扫码即会员、私域落点）→ 大众点评管搜索信任 → 小红书/抖音管种草引流 → 公众号/视频号管内容沉淀。六个渠道，一条主线：<b>把人引进店、把客人变会员</b>。</p>
+<p><b>渠道逻辑：</b><b>小程序是地基</b>（扫码即会员、私域落点）→ 大众点评管搜索信任 → 小红书/抖音管种草引流 → 公众号/视频号管内容沉淀。六个渠道一条主线：<b>把人引进店、把客人变会员</b>。</p>
 </div>
 
 <!-- 一 小程序 -->
 <div class="card">
 <div class="channel-head">
-<span class="ico" style="background:#fbe9e7">📱</span>
-<div><div class="name">① 小程序 —— 第一抓手（最开始的落点）</div><div class="role">私域地基 · 老板最看重</div></div>
+<span class="ico" style="background:#FFE3D5">📱</span>
+<div><div class="name">① 小程序 —— 第一抓手</div><div class="role">私域地基 · 老板最看重</div></div>
 </div>
 <ul>
 <li><b>小程序就是线上门面：</b>门头图、菜品图、招牌推荐、活动页——年轻人刷到"好看"才点进来，图片比装修重要；首页放"招牌三件套"（冒菜/辣子鸡/融合打卡款），一眼知道点什么</li>
@@ -75,13 +80,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue"
 <li><b>储值锁客：</b>充100送20、充200送50（按毛利调），学生党小额高频，锁3-4次回头</li>
 <li><b>活动位常驻：</b>学生优惠、新品上新、节日活动，小程序首页常换常新</li>
 </ul>
-<div class="hl">先做小程序：因为它是所有渠道的"落点"——小红书抖音把人引来看，最终都扫码进小程序变成会员。</div>
+<div class="hl">先做小程序：它是所有渠道的"落点"——小红书抖音把人引来看，最终都扫码进小程序变成会员。</div>
 </div>
 
 <!-- 二 大众点评 -->
 <div class="card">
 <div class="channel-head">
-<span class="ico" style="background:#fff3e0">⭐</span>
+<span class="ico" style="background:#FFF3E0">⭐</span>
 <div><div class="name">② 大众点评 —— 搜索信任入口</div><div class="role">年轻人选店先看点评</div></div>
 </div>
 <ul>
@@ -95,7 +100,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue"
 <!-- 三 小红书 -->
 <div class="card">
 <div class="channel-head">
-<span class="ico" style="background:#ffe4ec">📕</span>
+<span class="ico" style="background:#FCE4EC">📕</span>
 <div><div class="name">③ 小红书 —— 种草打卡阵地</div><div class="role">年轻人搜"吃什么"的地方</div></div>
 </div>
 <ul>
@@ -109,7 +114,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue"
 <!-- 四 抖音 -->
 <div class="card">
 <div class="channel-head">
-<span class="ico" style="background:#e8f0fe">🎵</span>
+<span class="ico" style="background:#E8F0FE">🎵</span>
 <div><div class="name">④ 抖音 —— 本地流量放大器</div><div class="role">周边年轻人的"刷着刷着就来了"</div></div>
 </div>
 <ul>
@@ -123,11 +128,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue"
 <!-- 五 公众号+视频号 -->
 <div class="card">
 <div class="channel-head">
-<span class="ico" style="background:#e8f5e9">💬</span>
+<span class="ico" style="background:#E8F5E9">💬</span>
 <div><div class="name">⑤ 公众号 + 视频号 —— 内容沉淀私域</div><div class="role">自己的地盘，免费反复触达</div></div>
 </div>
 <ul>
-<li><b>公众号：</b>不用天天发，一周1-2篇：新品上线、活动预告、后厨故事（"今天用了50斤辣椒"这种接地气内容）；配合微信支付/储值提醒，是私域的通知通道</li>
+<li><b>公众号：</b>一周1-2篇：新品上线、活动预告、后厨故事（"今天用了50斤辣椒"这种接地气内容）；配合储值提醒，是私域的通知通道</li>
 <li><b>视频号：</b>和小红书/抖音内容复用，多发"现做现炒"的烟火气视频；视频号能直接挂小程序，看完点进来就下单</li>
 <li><b>承接动作：</b>每篇文末放小程序码，每支视频挂小程序入口——内容看完→扫码进店→变会员</li>
 </ul>
@@ -136,7 +141,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue"
 <!-- 六 私域 -->
 <div class="card">
 <div class="channel-head">
-<span class="ico" style="background:#f3e5f5">🔗</span>
+<span class="ico" style="background:#F3E5F5">🔗</span>
 <div><div class="name">⑥ 私域运营 —— 所有渠道的最终落点</div><div class="role">把人留在自己手里</div></div>
 </div>
 <ul>
